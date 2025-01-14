@@ -15,8 +15,8 @@ Here is how you can achieve this with Universal Actions for Adaptive Cards:
 *	Use **Action.Execute**: Instead of **Action.Submit**, use **Action.Execute** to send events to the agent. Ensure each event has a unique **verb** to handle it later in Microsoft Copilot Studio. Check out the example of Adaptive Cards with Action.Execute here https://learn.microsoft.com/en-us/adaptive-cards/authoring-cards/universal-action-model#actionexecute 
 
 **Step 2: Create a Topic in Your Agent to display the Adaptive Card** 
-![Create send a message node](images\image-1.png)
-![Add Adaptive Card to message node](images\image.png)
+![Create send a message node](images/image-1.png)
+![Add Adaptive Card to message node](images/image.png)
 
 For example, you can send a survey input card.
 ``` json
@@ -126,7 +126,7 @@ Create a topic in your agent to listen for events in the Adaptive Card. For inst
 
 * Add Trigger: Invoke Received
 * Create a “Parse value” node to parse value of the Activity JSON from Adaptive card’s event. 
-![Parse value of Activity](images\image-3.png)
+![Parse value of Activity](images/image-3.png)
 Schema of the Activity.Value (Schema of the activity request format: https://learn.microsoft.com/en-us/adaptive-cards/authoring-cards/universal-action-model#adaptivecardaction-invoke-activity)
 
 ``` yaml
@@ -152,7 +152,7 @@ properties:
 ```
 
 * Branch Logic for Different Events based on **resultData.action.verb**: After each condition branch, design different cards to refresh from the previous card. 
-![Branch logic based on resultData.action.verb](images\image-2.png)
+![Branch logic based on resultData.action.verb](images/image-2.png)
 
 * Form the Response: Return the response to the agent in the following format:
 ``` json
