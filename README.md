@@ -165,7 +165,7 @@ properties:
 For more details of forming the response format, refer to the Universal Action Model documentation on Microsoft Learn. https://learn.microsoft.com/en-us/adaptive-cards/authoring-cards/universal-action-model#response-format
 
 Example:
-``` json
+```
 {
   status: 200,
   body: {
@@ -224,7 +224,7 @@ Example:
 
 ```
 Feel free to check out the full agent details in the attached solution:
-[FeedbackAgent_1_0_0_4.zip](resources\FeedbackAgent_1_0_0_4.zip)
+[FeedbackAgent_1_0_0_4.zip](resources/FeedbackAgent_1_0_0_4.zip)
 
 ## Pros and Cons of This Approach
 **Pros:**
